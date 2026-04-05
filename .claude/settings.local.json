@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find /Users/theosementa/Code/Swift/POC/POC_MLX -name *.swift -o -name Package.swift -o -name *.xcodeproj -o -name *.xcworkspace)",
+      "Read(//private/tmp/**)",
+      "Bash(gh repo:*)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:api.github.com)",
+      "Bash(gh api:*)",
+      "Bash(python3 -c \"import sys,json; [print\\(r[''''ref'''']\\) for r in json.load\\(sys.stdin\\)]\")",
+      "WebFetch(domain:github.com)",
+      "Bash(find ~/Library -path *mlx-swift-lm* -name *.swift)",
+      "WebSearch",
+      "WebFetch(domain:swiftpackageindex.com)",
+      "Bash(find ~/Library -path *mlx-swift* -name *.swift)",
+      "Bash(find ~/Library/Developer/Xcode/DerivedData/POC_MLX-*/SourcePackages/checkouts -name ChatSession.swift)",
+      "Bash(find ~/Library/Developer/Xcode/DerivedData -path *mlx* -name *.swift)",
+      "Bash(find ~/Library/Developer/Xcode/DerivedData/POC_MLX-* -name *.swift)"
+    ]
+  }
+}
