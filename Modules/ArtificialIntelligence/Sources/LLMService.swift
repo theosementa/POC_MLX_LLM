@@ -110,7 +110,7 @@ extension LLMService {
         kvCache = []
         kvCacheTokens = 0
         tokensPerSecond = nil
-        MLX.GPU.clearCache()
+        Memory.clearCache()
     }
 
 }
@@ -121,7 +121,7 @@ private extension LLMService {
     func setGPUCacheLimit() {
         let memory = ProcessInfo.processInfo.physicalMemory
         let cacheLimit = memory / 4
-        MLX.GPU.set(cacheLimit: Int(cacheLimit))
+        Memory.cacheLimit = Int(cacheLimit)
     }
 
     func handleOutput(_ output: String) {
